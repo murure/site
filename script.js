@@ -13,7 +13,7 @@ async function setLanguage(lang) {
       el.placeholder = t[key] || key;
     });
   } catch (e) {
-    console.error("Erro ao carregar traduções:", e);
+    console.error("Error loading translations:", e);
   }
 }
 

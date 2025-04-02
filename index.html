@@ -1,110 +1,102 @@
 <html lang="pt">
-<head>
-  <meta charset="UTF-8" />
-  <title>Mururé</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header>
-    <div style="display:flex;align-items:center;gap:1rem;">
-      <img src="logo.png" alt="Mururé logo" style="height:50px;padding:6px;background:white;border-radius:1rem;" />
-      <div><div style="font-weight:bold;font-size:1.25rem;">Mururé</div><div data-i18n="slogan">Para mulher migrante</div></div>
-    </div>
-    <nav>
-      <a href="#about" data-i18n="about">Sobre</a>
-      <a href="#services" data-i18n="services">Serviços</a>
-      <a href="#contact" data-i18n="contact">Contato</a>
-      <select onchange="setLanguage(this.value)">
-        <option value="pt">🇵🇹 PT</option>
-        <option value="en">🇬🇧 EN</option>
-        <option value="es">🇪🇸 ES</option>
-      </select>
-    </nav>
-  </header>
-
-  
-<main class="container">
-  <section class="hero" style="text-align:center;padding:4rem 1rem;background:#f9f5ff;border-radius:2rem;margin-bottom:3rem;">
-    <img src="logo.png" alt="Mururé" style="height:80px;margin-bottom:1rem;" />
-    <h1 style="font-size:2rem;margin-bottom:1rem;">Mururé</h1>
-    <p data-i18n="slogan" style="font-size:1.25rem;color:#6b21a8;">Para mulher migrante</p>
-    <p style="margin-top:1rem;max-width:600px;margin-left:auto;margin-right:auto;">🌍 <span data-i18n="whatIsText">Apoio a mulheres migrantes em Portugal com orientação, capacitação e oportunidades.</span></p>
-    <a href="#contact" style="display:inline-block;margin-top:2rem;background:#9333ea;color:white;padding:0.75rem 1.5rem;border-radius:9999px;text-decoration:none;">✨ <span data-i18n="join">Junte-se à nossa comunidade</span></a>
-  <!-- section removed -->
-
-    <!-- about removed for landing format -->
-      <h2 data-i18n="about">Sobre</h2>
-      <p data-i18n="aboutText">O Mururé nasceu do desejo de criar um espaço acolhedor para mulheres migrantes em Portugal.</p>
-    </section>
-
-    <section id="services">
-      <h2 data-i18n="services">Serviços</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3 data-i18n="training">Formação</h3>
-          <p data-i18n="trainingText">Workshops e cursos práticos para desenvolvimento pessoal e profissional.</p>
-        </div>
-        <div class="card">
-          <h3 data-i18n="mentoring">Mentoria</h3>
-          <p data-i18n="mentoringText">Conexão com mentoras para orientação e apoio individualizado.</p>
-        </div>
-        <div class="card">
-          <h3 data-i18n="employability">Empregabilidade</h3>
-          <p data-i18n="employabilityText">Apoio na procura de emprego, currículo e entrevistas.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mururé</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <img src="logo.png" alt="Mururé logo" style="height:50px;padding:6px;background:white;border-radius:1rem;" />
+        <div>
+          <div style="font-weight:bold;font-size:1.25rem;">Mururé</div>
+          <div data-i18n="slogan">Para mulher migrante</div>
         </div>
       </div>
-    </section>
-
-<section class="carousel" style="padding:3rem 1rem;background:#f3e8ff;">
-  <div class="container" style="max-width:900px;margin:auto;text-align:center;">
-    <h2 data-i18n="carouselTitle" style="margin-bottom:2rem;">Momentos Mururé</h2>
-    <div id="carousel-track" style="display:flex;gap:1rem;overflow-x:hidden;padding:1rem 0;scroll-behavior:smooth;">
-      <img src="https://placehold.co/300x200?text=Evento+1" style="border-radius:1rem;min-width:300px;" />
-      <img src="https://placehold.co/300x200?text=Oficina+1" style="border-radius:1rem;min-width:300px;" />
-      <img src="https://placehold.co/300x200?text=Encontro+2024" style="border-radius:1rem;min-width:300px;" />
-      <img src="https://placehold.co/300x200?text=Evento+2" style="border-radius:1rem;min-width:300px;" />
-      <img src="https://placehold.co/300x200?text=Oficina+2" style="border-radius:1rem;min-width:300px;" />
-      <img src="https://placehold.co/300x200?text=Encontro+2025" style="border-radius:1rem;min-width:300px;" />
-    </div>
-  </div>
-</section>
-  
-<section class="testimonials" style="background:#f9fafb;padding:3rem 1rem;">
-  <div class="container" style="max-width:900px;margin:auto;">
-    <h2 data-i18n="testimonials" style="text-align:center;margin-bottom:2rem;">Depoimentos</h2>
-    <div style="display:grid;gap:2rem;">
-      <blockquote style="background:white;padding:1.5rem;border-left:4px solid #9333ea;border-radius:0.5rem;">
-        <span data-i18n="testimonial1">O Mururé me ajudou a encontrar confiança e apoio para recomeçar minha carreira em Portugal.</span><br/><strong>— Maria, Brasil</strong>
-      </blockquote>
-      <blockquote style="background:white;padding:1.5rem;border-left:4px solid #9333ea;border-radius:0.5rem;">
-        <span data-i18n="testimonial2">Graças à mentoria do Mururé, consegui meu primeiro emprego em Lisboa.</span><br/><strong>— Aissatou, Guiné</strong>
-      </blockquote>
-    </div>
-  </div>
-</section>
-
-   <section id="contact" class="cta">
-      <h2 data-i18n="join">Junte-se à nossa comunidade</h2>
-      <p data-i18n="subscribeText">Inscreva-se para receber novidades e oportunidades:</p>
-      <form>
-        <input type="email" id="email" data-i18n-placeholder="emailPlaceholder" placeholder="Seu email" />
-        <button type="submit" data-i18n="subscribe">Subscrever</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Mururé. <span data-i18n="rights">Todos os direitos reservados.</span></p>
-    <p style="display: flex; justify-content: center; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#9333ea">
-        <path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5c0 3.3-2.45 5.75-5.75 5.75h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 2C5.68 4 4 5.68 4 7.75v8.5C4 18.32 5.68 20 7.75 20h8.5c2.07 0 3.75-1.68 3.75-3.75v-8.5C20 5.68 18.32 4 16.25 4h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm4.25-.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5z"/>
-      </svg>
-      <a href="https://www.instagram.com/projetomurure/" target="_blank" data-i18n="follow" style="color:#9333ea; text-decoration:none;">Siga-nos no Instagram</a>
-    </p>
-  </footer>
-</body>
-
-</body>
+      <nav>
+        <a href="#about" data-i18n="about">Sobre</a>
+        <a href="#services" data-i18n="services">Serviços</a>
+        <a href="#contact" data-i18n="contact">Contato</a>
+        <select onchange="setLanguage(this.value)">
+          <option value="pt">🇵🇹 Português</option>
+          <option value="en">🇬🇧 English</option>
+          <option value="es">🇪🇸 Spanish</option>
+        </select>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="hero" style="text-align:center;padding:4rem 1rem;background:#f9f5ff;border-radius:2rem;margin-bottom:3rem;">
+        <img src="logo.png" alt="Mururé" style="height:80px;margin-bottom:1rem;" />
+        <h1 style="font-size:2rem;margin-bottom:1rem;">Mururé</h1>
+        <p data-i18n="slogan" style="font-size:1.25rem;color:#6b21a8;">Para mulher migrante</p>
+        <p style="margin-top:1rem;max-width:600px;margin-left:auto;margin-right:auto;">🌍 <span data-i18n="whatIsText">Apoio a mulheres migrantes em Portugal com orientação, capacitação e oportunidades.</span></p>
+        <a href="#contact" style="display:inline-block;margin-top:2rem;background:#9333ea;color:white;padding:0.75rem 1.5rem;border-radius:9999px;text-decoration:none;">✨ <span data-i18n="join">Junte-se à nossa comunidade</span></a>
+        <h2 data-i18n="about">Sobre</h2>
+        <p data-i18n="aboutText">O Mururé nasceu do desejo de criar um espaço acolhedor para mulheres migrantes em Portugal.</p>
+      </section>
+      <section id="services">
+        <h2 data-i18n="services">Serviços</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3 data-i18n="training">Formação</h3>
+            <p data-i18n="trainingText">Workshops e cursos práticos para desenvolvimento pessoal e profissional.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="mentoring">Mentoria</h3>
+            <p data-i18n="mentoringText">Conexão com mentoras para orientação e apoio individualizado.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="employability">Empregabilidade</h3>
+            <p data-i18n="employabilityText">Apoio na procura de emprego, currículo e entrevistas.</p>
+          </div>
+        </div>
+      </section>
+      <section class="carousel" style="padding:3rem 1rem;background:#f3e8ff;">
+        <div class="container" style="max-width:900px;margin:auto;text-align:center;">
+          <h2 data-i18n="carouselTitle" style="margin-bottom:2rem;">Momentos Mururé</h2>
+          <div id="carousel-track" style="display:flex;gap:1rem;overflow-x:hidden;padding:1rem 0;scroll-behavior:smooth;">
+            <img src="https://placehold.co/300x200?text=Evento+1" style="border-radius:1rem;min-width:300px;" />
+            <img src="https://placehold.co/300x200?text=Oficina+1" style="border-radius:1rem;min-width:300px;" />
+            <img src="https://placehold.co/300x200?text=Encontro+2024" style="border-radius:1rem;min-width:300px;" />
+            <img src="https://placehold.co/300x200?text=Evento+2" style="border-radius:1rem;min-width:300px;" />
+            <img src="https://placehold.co/300x200?text=Oficina+2" style="border-radius:1rem;min-width:300px;" />
+            <img src="https://placehold.co/300x200?text=Encontro+2025" style="border-radius:1rem;min-width:300px;" />
+          </div>
+        </div>
+      </section>
+      <section class="testimonials" style="background:#f9fafb;padding:3rem 1rem;">
+        <div class="container" style="max-width:900px;margin:auto;">
+          <h2 data-i18n="testimonials" style="text-align:center;margin-bottom:2rem;">Depoimentos</h2>
+          <div style="display:grid;gap:2rem;">
+            <blockquote style="background:white;padding:1.5rem;border-left:4px solid #9333ea;border-radius:0.5rem;">
+              <span data-i18n="testimonial1">O Mururé me ajudou a encontrar confiança e apoio para recomeçar minha carreira em Portugal.</span><br/><strong>— Maria, Brasil</strong>
+            </blockquote>
+            <blockquote style="background:white;padding:1.5rem;border-left:4px solid #9333ea;border-radius:0.5rem;">
+              <span data-i18n="testimonial2">Graças à mentoria do Mururé, consegui meu primeiro emprego em Lisboa.</span><br/><strong>— Aissatou, Guiné</strong>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="cta">
+        <h2 data-i18n="join">Junte-se à nossa comunidade</h2>
+        <p data-i18n="subscribeText">Inscreva-se para receber novidades e oportunidades:</p>
+        <form>
+          <input type="email" id="email" data-i18n-placeholder="emailPlaceholder" placeholder="Seu email" />
+          <button type="submit" data-i18n="subscribe">Subscrever</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Mururé. <span data-i18n="rights">Todos os direitos reservados.</span></p>
+      <p style="display: flex; justify-content: center; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#9333ea">
+          <path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5c0 3.3-2.45 5.75-5.75 5.75h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 2C5.68 4 4 5.68 4 7.75v8.5C4 18.32 5.68 20 7.75 20h8.5c2.07 0 3.75-1.68 3.75-3.75v-8.5C20 5.68 18.32 4 16.25 4h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm4.25-.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5z"/>
+        </svg>
+        <a href="https://www.instagram.com/projetomurure/" target="_blank" data-i18n="follow" style="color:#9333ea; text-decoration:none;">Siga-nos no Instagram</a>
+      </p>
+    </footer>
+  </body>
+  </body>
 </html>
