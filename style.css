@@ -1,0 +1,110 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: white;
+  color: #1f2937;
+  line-height: 1.6;
+}
+header {
+  background: #9333ea;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  max-width: 1200px;
+}
+nav a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav select {
+  background-color: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.875rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='white'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 0.65rem auto;
+  cursor: pointer;
+}
+nav select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.4);
+}
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.cta {
+  background: #f3e8ff;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+input[type=email] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  background: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  nav select {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
+}
